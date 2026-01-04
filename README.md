@@ -57,14 +57,7 @@ environmental-risk-prediction/
 │   │   ├── performance_by_industry.csv
 │   │   └── hyperparameter_results.csv
 │   │
-│   └── results_summary.json           # Comprehensive results dictionary
-│
-└── docs/
-    ├── Chapter_4_Results_Analysis.docx
-    ├── Chapters_5_6_7_Discussion_Conclusion_Reflection.docx
-    ├── Appendices_Full_APA7.docx
-    ├── Chapter_9_Technical_Documentation.docx
-    └── Abstract.docx
+│   └── results_summary.json           # Comprehensive results
 ```
 
 ## 🚀 Getting Started
@@ -79,7 +72,7 @@ environmental-risk-prediction/
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/[your-username]/environmental-risk-prediction.git
+git clone https://github.com/ADEBAYO306/environmental-risk-prediction.git
 cd environmental-risk-prediction
 ```
 
@@ -268,9 +261,9 @@ See `requirements.txt` for complete list.
 If you use this code or data in your research, please cite:
 
 ```
-[Your Name] (2024). Predicting Corporate Environmental Risk Using Machine Learning 
+Adebayo (2025). Predicting Corporate Environmental Risk Using Machine Learning 
 Analysis of SEC 10-K Filings. MSc Business Analytics Dissertation, 
-[University Name].
+Greenwich University.
 ```
 
 ## 📝 License
@@ -279,25 +272,25 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👤 Author
 
-**[Your Name]**
-- Email: [your.email@university.edu]
+**Adebayo**
+- Email: adebayo@gre.ac.uk
 - LinkedIn: [Your LinkedIn Profile]
-- University: [University Name]
+- University: Greenwich University
 
 ## 🙏 Acknowledgments
 
 - Supervisor: [Supervisor Name]
-- University: [University Name] MSc Business Analytics Programme
+- University: Greenwich University MSc Business Analytics Programme
 - Data Sources: SEC EDGAR, EPA ECHO, Hugging Face
 
 ## 📧 Contact
 
 For questions, suggestions, or collaboration opportunities:
-- Email: [your.email@university.edu]
+- Email: adebayo@gre.ac.uk
 - GitHub Issues: [Repository Issues Page]
 
 ---
 
 **Note**: This is a research project for academic purposes. Model predictions should not be used as sole basis for investment decisions. Always conduct comprehensive due diligence and consult qualified professionals.
 
-**Last Updated**: December 2024
+**Last Updated**: January 2026
