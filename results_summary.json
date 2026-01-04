@@ -1,0 +1,37 @@
+{
+  "Dataset": {
+    "Total_Observations": 354,
+    "Training_Observations": 236,
+    "Validation_Observations": 59,
+    "Test_Observations": 59,
+    "High_Risk_Percentage": "25.1%"
+  },
+  "Best_Hyperparameters": {
+    "class_weight": "balanced",
+    "max_depth": 10,
+    "min_samples_leaf": 4,
+    "min_samples_split": 10,
+    "n_estimators": 100
+  },
+  "Test_Performance": {
+    "Accuracy": 0.7288,
+    "Precision": 0.4,
+    "Recall": 0.2857,
+    "F1_Score": 0.3333,
+    "ROC_AUC": 0.5794,
+    "Specificity": 0.8667
+  },
+  "Baseline_Comparison": {
+    "Naive_F1": 0.0,
+    "Industry_F1": 0.3774,
+    "RF_F1": 0.3333,
+    "Improvement_vs_Naive_pct": Infinity,
+    "Improvement_vs_Industry_pct": -11.7
+  },
+  "Confusion_Matrix": {
+    "True_Negatives": 39,
+    "False_Positives": 6,
+    "False_Negatives": 10,
+    "True_Positives": 4
+  }
+}
