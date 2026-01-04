@@ -6,8 +6,8 @@ Business Analytics Project: Predicting Corporate Environmental Risk
 This script builds the Random Forest classifier, evaluates performance,
 and generates all tables and figures for Chapter 4.
 
-Author: [Your Name]
-Date: December 2024
+Author: Adebayo
+Date: December 2025
 """
 
 import pandas as pd
@@ -37,7 +37,7 @@ print("=" * 80)
 # ============================================================================
 
 print("\n1. Loading data...")
-df = pd.read_csv('/home/claude/realistic_matched_dataset.csv')
+df = pd.read_csv('/home/hp/matched_dataset.csv')
 
 print(f"   ✓ Loaded {len(df)} observations")
 print(f"   Columns: {len(df.columns)}")
@@ -152,7 +152,7 @@ grid_results = pd.DataFrame(grid_search.cv_results_)
 grid_results_top = grid_results.nlargest(10, 'mean_test_score')[
     ['params', 'mean_test_score', 'std_test_score', 'rank_test_score']
 ].copy()
-grid_results_top.to_csv('/home/claude/hyperparameter_results.csv', index=False)
+grid_results_top.to_csv('/home/hp/hyperparameter_results.csv', index=False)
 print(f"\n   ✓ Saved top 10 hyperparameter configurations")
 
 # ============================================================================
@@ -264,7 +264,7 @@ comparison_df = pd.DataFrame({
     'ROC-AUC': [0.5, '-', test_roc_auc]
 })
 
-comparison_df.to_csv('/home/claude/model_comparison.csv', index=False)
+comparison_df.to_csv('/home/hp/model_comparison.csv', index=False)
 print(f"\n   ✓ Saved model comparison table")
 
 # ============================================================================
@@ -287,7 +287,7 @@ for idx, row in feature_importance.head(10).iterrows():
     print(f"   {row['Feature']:25s} {row['Importance_Percent']:6.2f}%")
 print(f"   {'=' * 60}")
 
-feature_importance.to_csv('/home/claude/feature_importance.csv', index=False)
+feature_importance.to_csv('/home/hp/feature_importance.csv', index=False)
 print(f"\n   ✓ Saved complete feature importance rankings")
 
 # ============================================================================
@@ -322,7 +322,7 @@ for industry in test_df['industry'].unique():
             print(f"   {industry:15s} N={mask.sum():3d}, Acc={ind_acc:.3f}, F1={ind_f1:.3f}")
 
 industry_results_df = pd.DataFrame(industry_results)
-industry_results_df.to_csv('/home/claude/performance_by_industry.csv', index=False)
+industry_results_df.to_csv('/home/hp/performance_by_industry.csv', index=False)
 
 print(f"   {'=' * 60}")
 print(f"   ✓ Saved industry-specific performance")
@@ -339,7 +339,7 @@ test_results['predicted_risk'] = test_pred
 test_results['predicted_probability'] = test_pred_proba
 test_results['correct_prediction'] = (test_pred == y_test).astype(int)
 
-test_results.to_csv('/home/claude/test_predictions.csv', index=False)
+test_results.to_csv('/home/hp/test_predictions.csv', index=False)
 print(f"   ✓ Saved test set predictions")
 
 # Create comprehensive results summary
@@ -376,7 +376,7 @@ results_summary = {
 }
 
 import json
-with open('/home/claude/results_summary.json', 'w') as f:
+with open('/home/hp/results_summary.json', 'w') as f:
     json.dump(results_summary, f, indent=2)
 
 print(f"   ✓ Saved comprehensive results summary")
