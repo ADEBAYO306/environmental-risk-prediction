@@ -1,0 +1,11 @@
+Rank,n_estimators,max_depth,min_samples_split,min_samples_leaf,class_weight,Mean_CV_F1_Score,Std_CV_F1_Score,Mean_CV_Accuracy,Selected
+1,100,10,10,4,balanced,0.318,0.052,0.712,Yes
+2,200,10,10,4,balanced,0.315,0.048,0.709,No
+3,100,20,10,2,balanced,0.312,0.055,0.706,No
+4,300,10,10,4,balanced,0.311,0.051,0.708,No
+5,100,10,5,4,balanced,0.309,0.049,0.705,No
+6,200,20,10,2,balanced,0.306,0.053,0.703,No
+7,100,None,10,4,balanced,0.304,0.056,0.701,No
+8,200,10,5,4,balanced,0.302,0.047,0.704,No
+9,100,20,5,2,balanced,0.299,0.054,0.699,No
+10,300,20,10,2,balanced,0.297,0.050,0.702,No
