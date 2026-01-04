@@ -4,7 +4,7 @@ Business Analytics Project: Predicting Corporate Environmental Risk
 ====================================================================
 
 This script provides the complete pipeline for collecting and processing data
-for your research project. Run each section sequentially.
+for the research project.
 
 Requirements:
 - datasets (Hugging Face)
