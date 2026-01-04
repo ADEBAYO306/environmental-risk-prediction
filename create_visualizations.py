@@ -1,9 +1,3 @@
-"""
-VISUALIZATION SCRIPT FOR CHAPTER 4
-====================================
-Creates all figures and tables for the Results and Analysis chapter
-"""
-
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -23,12 +17,12 @@ print("=" * 80)
 
 # Load data
 print("\n1. Loading data and results...")
-df = pd.read_csv('/home/claude/realistic_matched_dataset.csv')
-feature_importance = pd.read_csv('/home/claude/feature_importance.csv')
-comparison = pd.read_csv('/home/claude/model_comparison.csv')
-test_predictions = pd.read_csv('/home/claude/test_predictions.csv')
+df = pd.read_csv('/home/hp/matched_dataset.csv')
+feature_importance = pd.read_csv('/home/hp/feature_importance.csv')
+comparison = pd.read_csv('/home/hp/model_comparison.csv')
+test_predictions = pd.read_csv('/home/hp/test_predictions.csv')
 
-with open('/home/claude/results_summary.json', 'r') as f:
+with open('/home/hp/results_summary.json', 'r') as f:
     results = json.load(f)
 
 print("   ✓ Data loaded")
@@ -74,7 +68,7 @@ for i, v in enumerate([risk_counts[0], risk_counts[1]]):
     axes[2].text(i, v + 5, f'{v}\n({pct:.1f}%)', ha='center', va='bottom', fontweight='bold')
 
 plt.tight_layout()
-plt.savefig('/home/claude/figure1_sample_distribution.png', dpi=300, bbox_inches='tight')
+plt.savefig('/home/hp/figure1_sample_distribution.png', dpi=300, bbox_inches='tight')
 plt.close()
 print("   ✓ Saved figure1_sample_distribution.png")
 
@@ -125,7 +119,7 @@ axes[7].axis('off')
 plt.suptitle('Distribution of Textual Features by Risk Category', 
              fontsize=14, fontweight='bold', y=1.00)
 plt.tight_layout()
-plt.savefig('/home/claude/figure2_feature_distributions.png', dpi=300, bbox_inches='tight')
+plt.savefig('/home/hp/figure2_feature_distributions.png', dpi=300, bbox_inches='tight')
 plt.close()
 print("   ✓ Saved figure2_feature_distributions.png")
 
@@ -158,7 +152,7 @@ plt.text(1, -0.3, f'Overall Accuracy: {accuracy:.2%}',
          ha='center', fontsize=12, fontweight='bold', transform=ax.transData)
 
 plt.tight_layout()
-plt.savefig('/home/claude/figure3_confusion_matrix.png', dpi=300, bbox_inches='tight')
+plt.savefig('/home/hp/figure3_confusion_matrix.png', dpi=300, bbox_inches='tight')
 plt.close()
 print("   ✓ Saved figure3_confusion_matrix.png")
 
@@ -194,7 +188,7 @@ ax.legend(loc='lower right', fontsize=11, frameon=True, shadow=True)
 ax.grid(True, alpha=0.3)
 
 plt.tight_layout()
-plt.savefig('/home/claude/figure4_roc_curve.png', dpi=300, bbox_inches='tight')
+plt.savefig('/home/hp/figure4_roc_curve.png', dpi=300, bbox_inches='tight')
 plt.close()
 print("   ✓ Saved figure4_roc_curve.png")
 
@@ -227,7 +221,7 @@ for i, (idx, row) in enumerate(top_features.iterrows()):
             va='center', fontweight='bold', fontsize=10)
 
 plt.tight_layout()
-plt.savefig('/home/claude/figure5_feature_importance.png', dpi=300, bbox_inches='tight')
+plt.savefig('/home/hp/figure5_feature_importance.png', dpi=300, bbox_inches='tight')
 plt.close()
 print("   ✓ Saved figure5_feature_importance.png")
 
@@ -284,7 +278,7 @@ for bar, value in zip(bars, f1_scores):
                 fontweight='bold', fontsize=11)
 
 plt.tight_layout()
-plt.savefig('/home/claude/figure6_model_comparison.png', dpi=300, bbox_inches='tight')
+plt.savefig('/home/hp/figure6_model_comparison.png', dpi=300, bbox_inches='tight')
 plt.close()
 print("   ✓ Saved figure6_model_comparison.png")
 
@@ -326,7 +320,7 @@ for i, (ind, f1) in enumerate(zip(industries, industry_perf['F1_Score'])):
                 fontweight='bold', fontsize=11)
 
 plt.tight_layout()
-plt.savefig('/home/claude/figure7_performance_by_industry.png', dpi=300, bbox_inches='tight')
+plt.savefig('/home/hp/figure7_performance_by_industry.png', dpi=300, bbox_inches='tight')
 plt.close()
 print("   ✓ Saved figure7_performance_by_industry.png")
 
@@ -354,7 +348,7 @@ plt.title('Correlation Matrix of Features', fontsize=14, fontweight='bold', pad=
 plt.xticks(rotation=45, ha='right')
 plt.yticks(rotation=0)
 plt.tight_layout()
-plt.savefig('/home/claude/figure8_correlation_matrix.png', dpi=300, bbox_inches='tight')
+plt.savefig('/home/hp/figure8_correlation_matrix.png', dpi=300, bbox_inches='tight')
 plt.close()
 print("   ✓ Saved figure8_correlation_matrix.png")
 
