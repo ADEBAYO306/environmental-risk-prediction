@@ -273,21 +273,21 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 👤 Author
 
 **Adebayo**
-- Email: adebayo@gre.ac.uk
-- LinkedIn: [Your LinkedIn Profile]
-- University: Greenwich University
+- Email: aa8965m@gre.ac.uk
+- LinkedIn: (https://www.linkedin.com/in/ayomide-adebayo-17b046151?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app)
+- University: University of Greenwich
 
 ## 🙏 Acknowledgments
 
-- Supervisor: [Supervisor Name]
-- University: Greenwich University MSc Business Analytics Programme
+- Supervisor: Dr Raunak Mishra
+- University: University of Greenwich, MSc Business Analytics
 - Data Sources: SEC EDGAR, EPA ECHO, Hugging Face
 
 ## 📧 Contact
 
 For questions, suggestions, or collaboration opportunities:
-- Email: adebayo@gre.ac.uk
-- GitHub Issues: [Repository Issues Page]
+- Email: aa8965m@gre.ac.uk
+- GitHub Issues:(https://github.com/ADEBAYO306/environmental-risk-prediction)
 
 ---
 
